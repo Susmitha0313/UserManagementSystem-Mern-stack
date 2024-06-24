@@ -1,11 +1,12 @@
-const loadHome = async(req, res) => {
+const verifyLogin = async(req, res) => {
     try {
-        res.send("he wkoksdhfsjl")
+        console.log(req.body);
+        res.send(req.body)
     } catch (error) {
         console.log(error.message);
     }
 }
 
 module.exports = {
-    loadHome,
+    verifyLogin,
 }
