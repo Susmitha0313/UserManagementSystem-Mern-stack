@@ -12,13 +12,13 @@ function Userlogin() {
   const [password, setPassword] = useState('');
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  // const userData = useSelector((store) => store.user.data);
+  const userData = useSelector((store) => store.user.data);
 
-  // useEffect(() => {
-  //   if (userData) {
-  //     navigate('/home');
-  //   }
-  // }, [userData, navigate]);
+  useEffect(() => {
+    if (userData) {
+      navigate('/');
+    }
+  }, [userData]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,7 +26,7 @@ function Userlogin() {
       
       return toast.error("Enter email and Password",{ hideProgressBar: true, className: 'custom-toast-error', autoClose: 2000 })
     } else {
-      console.log(email,password,toast);
+      console.log(email,password);
     dispatch(authLogin({email, password, toast}))
     }
     
@@ -35,7 +35,7 @@ function Userlogin() {
   return (
     <>
    
-      <div className="container">
+      <div className="log">
       <ToastContainer/>
         <div className="login-form">
           <h2>Login</h2>
@@ -69,7 +69,7 @@ function Userlogin() {
         </div>
         <div className="img-container">
           <img
-            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/welcome-banner-design-template-61084152870e4a055056a7efc73a2359_screen.jpg?ts=1569136045"
+            src="https://img.freepik.com/premium-vector/charcoal-minimalis-vector-white-background_889056-49381.jpg"
             alt="Description"
           />
         </div>

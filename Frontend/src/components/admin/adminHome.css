@@ -1,0 +1,143 @@
+/* General Styles */
+/* .admin-home {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  /* Container */
+  .admincard {
+    background: #000;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #343a40;
+    padding: 10px;
+    color: white;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: auto;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .table th {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .table td {
+    background-color: white;
+  }
+  
+  .table tr:nth-child(even) td {
+    background-color: #f4f4f9;
+  }
+  
+  /* Buttons */
+  .button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .button-edit {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .button-edit:hover {
+    background-color: #e0a800;
+  }
+  
+  .button-delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .button-delete:hover {
+    background-color: #c82333;
+  }
+  
+  .button-save {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .button-save:hover {
+    background-color: #218838;
+  }
+  
+  /* Input */
+  .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  

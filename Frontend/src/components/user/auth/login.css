@@ -1,8 +1,17 @@
-body {
-  background-color: rgb(67, 66, 66);
-}
 
-.container {
+  body{
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Make sure the body takes the full height of the viewport * /* Cover the entire viewport */
+    background-color: grey;
+  
+    
+  }
+  
+  
+
+
+.log {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
