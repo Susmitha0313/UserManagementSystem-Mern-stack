@@ -6,7 +6,7 @@ import adminSlice from "./adminRedux/adminSlice";
 const configStore=configureStore({
     reducer:{
         user : userSlice,
-        admin:adminSlice
+        admin: adminSlice
     }
     
 })

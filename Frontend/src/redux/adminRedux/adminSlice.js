@@ -50,5 +50,6 @@ const adminSlice =  createSlice({
 })
 
 
+export const { Logout } = adminSlice.actions;
 
 export default adminSlice.reducer;

@@ -19,3 +19,4 @@ app.use('/', userRoute);
 app.use('/admin' , adminRouter)
 
 app.listen(port, () => console.log(`server running on http://localhost:${port}`))
+  

@@ -34,7 +34,6 @@ function Userlogin() {
 
   return (
     <>
-   
       <div className="log">
       <ToastContainer/>
         <div className="login-form">
@@ -65,14 +64,11 @@ function Userlogin() {
             </button>
            
           </form>
-          <span className="sign">Don't have an account? <Link to={'/register'}>Sign up and get started!</Link></span>
+          <span className="sign">Don't have an account? <Link to={'/register'}>Sign up!</Link></span>
+          <span className="sign">Are you the Admin?  <Link to={'/admin'}>Click here!</Link></span>
+        
         </div>
-        <div className="img-container">
-          <img
-            src="https://img.freepik.com/premium-vector/charcoal-minimalis-vector-white-background_889056-49381.jpg"
-            alt="Description"
-          />
-        </div>
+       
       </div>
     </>
   );

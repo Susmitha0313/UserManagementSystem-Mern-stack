@@ -1,17 +1,17 @@
 const User= require('../models/user')
 const { generateToken } = require('../jwtConfig')
 
-const adminLogin=async(req,res)=>{
+const adminLogin = async(req,res)=>{
     try {
-        const {Email,password}=req.body
-        console.log(Email,password);
+        const {email,password}=req.body
+        console.log(req.body);
 
-        const adminEmail=process.env.ADMIN_EMAIL
-        const adminPass=process.env.ADMIN_PASS
+        const adminEmail=process.env.ADMIN_EMAIL || 'admin@gmail.com'
+        const adminPass=process.env.ADMIN_PASS || 'admin@123'
 
-        if(adminEmail===Email){
+        if(adminEmail===email){
             if(adminPass===password){
-                const token =await generateToken({email:Email})
+                const token =await generateToken({email:email})
                 const userData=await User.find({})
                 res.json({token:token,userData:userData})
             }else{

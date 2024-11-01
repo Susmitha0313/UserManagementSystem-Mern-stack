@@ -94,12 +94,6 @@ const UserSignup = () => {
           <span className="login">Already have an account? <Link to={'/login'}>Log in here!</Link></span>
         </form>
       </div>
-      <div className="img-container">
-        <img
-          src="https://img.freepik.com/premium-vector/charcoal-minimalis-vector-white-background_889056-49381.jpg"
-          alt="Description"
-        />
-      </div>
     </div>
   );
 };

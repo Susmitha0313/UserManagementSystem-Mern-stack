@@ -31,8 +31,6 @@ function Home() {
   }
 
   function handleSaveDetails() {
-   
-   
     if (formData.name.trim() === '' || formData.mobile.trim() === '') {
       toast.error('All Fields Are Required', { hideProgressBar: true, className: 'custom-toast-error', autoClose: 2000 });
     } else if (formData.mobile.length < 10) {
